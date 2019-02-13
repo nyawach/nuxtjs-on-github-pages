@@ -80,3 +80,6 @@ typings/
 
 # Service worker
 sw.*
+
+# Firebase
+.firebase
