@@ -7,7 +7,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   /*
   ** Headers of the page
@@ -63,5 +63,8 @@ module.exports = {
   },
   router: {
     ...routerBase,
+  },
+  generate: {
+    dir: 'docs',
   },
 }
