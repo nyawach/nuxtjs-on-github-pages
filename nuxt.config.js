@@ -1,5 +1,11 @@
 const pkg = require('./package')
 
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/nuxtjs-on-github-pages/'
+  }
+} : {}
+
 module.exports = {
   mode: 'spa',
 
@@ -54,5 +60,8 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  router: {
+    ...routerBase,
+  },
 }
