@@ -11,8 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy:gh-pages": "git subtree push --prefix dist/ origin gh-pages"
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
